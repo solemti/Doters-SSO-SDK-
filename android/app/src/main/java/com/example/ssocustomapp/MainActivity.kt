@@ -31,13 +31,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     // params de urls de login y logout (información solo de prueba)
-    private val scheme: String = "<app_scheme>" // Scheme con el que esta identificada la app appscheme://
-    private val url: String = "<url_sso_web_client>" // URL de cliente web del SSO https://domain.ex
-    private val apiUrl: String = "<url_sso_api>" // Host de API para hacer logout y consumir servicios de userInfo, introspection y refreshToken https://domain.example
-    private val clientId: String = "<client_id>" // Client Id para identificar el partner
-    private val clientSecret: String = "<client_secret>" // Client Secret necesario para hacer el login
-    private val language: String = "<codigo_lenguaje_ingles_español>" // Codigo de lenguaje a mostrar en la web app del SSO
-    private val state: String = "<state_string>" // State necesario para hacer el login
+    private val scheme: String = "<SCHEME>" // Scheme con el que esta identificada la app appscheme://
+    private val url: String = "<HOST-DOTERS>" // URL de cliente web del SSO https://domain.ex
+    private val apiUrl: String = "<HOST-DOTERS>"    // Host de API para hacer logout y consumir servicios de userInfo,
+                                                    // introspection y refreshToken https://domain.example
+    private val clientId: String = "<CLIENT-ID>" // Client Id para identificar el partner
+    private val clientSecret: String = "<CLIENT-SECRET>" // Client Secret necesario para hacer el login
+    private val language: String = "<LANGUAGE>" // Codigo de lenguaje a mostrar en la web app del SSO
+    private val state: String = "<STATE>" // State necesario para hacer el login
 
     private var ssosdk = SSOSDK(scheme, url, apiUrl, language, clientId, clientSecret, state) // Instanciación de SDK del SSO
 
